@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面包护卫队官网｜主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 20, 0.55), rgba(0, 0, 20, 0.55)),
+                        url('星空.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+
+        /* 顶部导航栏：Logo 在左上角，链接靠左排列 */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            padding: 8px 24px;
+        }
+
+        nav .brand img {
+            height: 38px;
+            width: auto;
+            display: block;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        nav a:hover,
+        nav a.current {
+            color: greenyellow;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 16px;
+            text-align: center;
+        }
+
+        /* 图片自适应：不超出容器，保持比例 */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        /* 视频自适应：宽度跟随容器，高度按比例 */
+        video {
+            display: block;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin: 20px auto;
+            background: #000;
+        }
+
+        h2.text {
+            color: greenyellow;
+            font-size: 24px;
+            margin: 16px 0;
+        }
+
+        p.text {
+            color: greenyellow;
+            width: 100%;
+            max-width: 800px;
+            margin: 16px auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="brand" href="index.html"><img src="logo2.png" alt="面包护卫队 Logo"></a>
+        <a class="current" href="index.html">主页</a>
+        <a href="关于我们.html">关于我们</a>
+        <a href="荣誉榜.html">荣誉榜</a>
+        <a href="内创游戏.html">内创游戏</a>
+    </nav>
+
+    <div class="wrap">
+        <video src="视频1.mp4" controls preload="metadata"></video>
+        <h2 class="text">面包护卫队｜Bread Escort</h2>
+        <p class="text">
+            面包护卫队（英文名：Bread Escort），2024.11.26 日于上海市杨浦区惠民中学预备三班由首领徐翊峰创建的传奇势力，至今共 11 位成员
+        </p>
+        <p class="text">
+            在这个传奇势力不断发展中，刀削面集团和面包护卫队合并，至此，面包护卫队成员为：主席徐翊峰、副主席孙量呈、外交部长王晟、经济主席马丁、军事主席华思晨、秩序维护官王彦尧、宣传部长郑元沁、军事部长李昱诚、人大代表袁煜明和俞程潇，小人大代表李明哲等
+        </p>
+    </div>
+</body>
+</html>
